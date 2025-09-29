@@ -25,6 +25,8 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.ArrayList;
 
+import gat.git.gingimator.init.GingimatorSixsevenModMobEffects;
+
 @Mod("gingimator_sixseven")
 public class GingimatorSixsevenMod {
 	public static final Logger LOGGER = LogManager.getLogger(GingimatorSixsevenMod.class);
@@ -35,6 +37,8 @@ public class GingimatorSixsevenMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+
+		GingimatorSixsevenModMobEffects.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

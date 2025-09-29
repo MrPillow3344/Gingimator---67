@@ -1,17 +1,97 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "RadioactiveValley",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_valley",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gingimator_sixseven/worldgen/biome/radioactive_valley.json"
+        ]
+      }
+    },
+    {
+      "name": "RadiationEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/gat/git/gingimator/potion/RadiationEffectMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiationEffectProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_effect_procedure",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/gat/git/gingimator/procedures/RadiationEffectProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Radiation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/gat/git/gingimator/procedures/RadiationProcedure.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "biome.gingimator_sixseven.radioactive_valley": "Radioactive Valley",
+      "effect.gingimator_sixseven.radiation_effect": "Radiation"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/resources/gingimator_sixseven.mixins.json",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/gat/git/gingimator/GingimatorSixsevenMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/gat/git/gingimator/init/GingimatorSixsevenModBiomes.java",
+      "src/main/java/gat/git/gingimator/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/gat/git/gingimator/init/GingimatorSixsevenModMobEffects.java"
     ]
   },
   "foldersRoot": {
