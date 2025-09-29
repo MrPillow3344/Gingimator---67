@@ -19,7 +19,7 @@ public class RadiationEffectMobEffect extends MobEffect {
 
 	@Override
 	public boolean applyEffectTick(ServerLevel level, LivingEntity entity, int amplifier) {
-		RadiationEffectProcedureProcedure.execute();
+		RadiationEffectProcedureProcedure.execute(level, entity);
 		return super.applyEffectTick(level, entity, amplifier);
 	}
 }
