@@ -25,24 +25,20 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.ArrayList;
 
-import gat.git.gingimator.init.GingimatorModTabs;
-import gat.git.gingimator.init.GingimatorModItems;
-import gat.git.gingimator.init.GingimatorModEntities;
+import gat.git.gingimator.init.GingimatorSixsevenModMobEffects;
 
-@Mod("gingimator")
-public class GingimatorMod {
-	public static final Logger LOGGER = LogManager.getLogger(GingimatorMod.class);
-	public static final String MODID = "gingimator";
+@Mod("gingimator_sixseven")
+public class GingimatorSixsevenMod {
+	public static final Logger LOGGER = LogManager.getLogger(GingimatorSixsevenMod.class);
+	public static final String MODID = "gingimator_sixseven";
 
-	public GingimatorMod(IEventBus modEventBus) {
+	public GingimatorSixsevenMod(IEventBus modEventBus) {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 
-		GingimatorModItems.REGISTRY.register(modEventBus);
-		GingimatorModEntities.REGISTRY.register(modEventBus);
-		GingimatorModTabs.REGISTRY.register(modEventBus);
+		GingimatorSixsevenModMobEffects.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

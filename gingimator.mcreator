@@ -1,27 +1,57 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Car",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "car",
+      "metadata": {
+        "files": [
+          "src/main/java/gat/git/gingimator/client/renderer/CarRenderer.java",
+          "src/main/resources/assets/gingimator/items/car_spawn_egg.json",
+          "src/main/resources/data/gingimator/neoforge/biome_modifier/car_biome_modifier.json",
+          "src/main/java/gat/git/gingimator/entity/CarEntity.java"
+        ]
+      },
+      "path": "~/Car"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "entity.gingimator.car": "Car",
+      "item.gingimator.car_spawn_egg": "Car Spawn Egg"
+    }
   },
   "metadata": {
     "files": [
       "src/main/resources/pack.mcmeta",
       "src/main/java/gat/git/gingimator/GingimatorMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/gat/git/gingimator/init/GingimatorModModels.java",
+      "src/main/java/gat/git/gingimator/init/GingimatorModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/gat/git/gingimator/init/GingimatorModItems.java",
+      "src/main/java/gat/git/gingimator/init/GingimatorModEntityRenderers.java",
+      "src/main/java/gat/git/gingimator/init/GingimatorModEntities.java"
     ]
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Car",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "gingimator",
     "modName": "Gingimator - 67",
-    "version": "0.0.290925",
+    "version": "0.1.290925",
     "author": "MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",

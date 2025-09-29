@@ -1,1 +1,4 @@
-{}
+{
+  "entity.gingimator.car": "Car",
+  "item.gingimator.car_spawn_egg": "Car Spawn Egg"
+}
