@@ -31,7 +31,16 @@
       "locked_code": false,
       "registry_name": "radiation_effect_procedure",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/gat/git/gingimator/procedures/RadiationEffectProcedureProcedure.java"
         ]
