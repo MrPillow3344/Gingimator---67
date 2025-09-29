@@ -25,12 +25,12 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.ArrayList;
 
-@Mod("gingimator_sixseven")
-public class GingimatorSixsevenMod {
-	public static final Logger LOGGER = LogManager.getLogger(GingimatorSixsevenMod.class);
-	public static final String MODID = "gingimator_sixseven";
+@Mod("gingimator")
+public class GingimatorMod {
+	public static final Logger LOGGER = LogManager.getLogger(GingimatorMod.class);
+	public static final String MODID = "gingimator";
 
-	public GingimatorSixsevenMod(IEventBus modEventBus) {
+	public GingimatorMod(IEventBus modEventBus) {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);

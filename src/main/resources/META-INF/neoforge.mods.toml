@@ -3,9 +3,9 @@ loaderVersion="[4,)"
 license="Not specified"
 
 [[mods]]
-modId="gingimator_sixseven"
-version="1.0.0"
-displayName="Gingimator - Six Seven"
+modId="gingimator"
+version="0.0.290925"
+displayName="Gingimator - 67"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="MCreator"
@@ -17,14 +17,14 @@ authors="MCreator"
 # Start of user code block custom mixins
 # End of user code block custom mixins
 
-[[dependencies.gingimator_sixseven]]
+[[dependencies.gingimator]]
     modId="neoforge"
     type="required"
     versionRange="[21.4.137,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.gingimator_sixseven]]
+[[dependencies.gingimator]]
     modId="minecraft"
     type="required"
     versionRange="[1.21.4]"
