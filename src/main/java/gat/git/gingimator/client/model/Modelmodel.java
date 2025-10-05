@@ -12,7 +12,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.EntityModel;
 
-// Made with Blockbench 4.10.3
+// Made with Blockbench 4.12.6
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 public class Modelmodel extends EntityModel<LivingEntityRenderState> {
@@ -33,9 +33,9 @@ public class Modelmodel extends EntityModel<LivingEntityRenderState> {
 		this.roof = root.getChild("roof");
 		this.base = root.getChild("base");
 		this.wheel3 = root.getChild("wheel3");
-		this.wheel4 = root.getChild("wheel4");
+		this.wheel4 = this.wheel3.getChild("wheel4");
 		this.wheel1 = root.getChild("wheel1");
-		this.wheel2 = root.getChild("wheel2");
+		this.wheel2 = this.wheel1.getChild("wheel2");
 		this.interior = root.getChild("interior");
 		this.windows = root.getChild("windows");
 	}
@@ -61,8 +61,8 @@ public class Modelmodel extends EntityModel<LivingEntityRenderState> {
 				PartPose.offsetAndRotation(-2.0F, -7.0F, -26.0F, -1.3963F, 0.0F, 0.0F));
 		PartDefinition wheel3 = partdefinition.addOrReplaceChild("wheel3", CubeListBuilder.create().texOffs(42, 30).addBox(-7.0F, -2.0F, -2.0F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 21.0F, -10.0F));
 		PartDefinition wheel4 = wheel3.addOrReplaceChild("wheel4", CubeListBuilder.create().texOffs(0, 30).addBox(-9.0F, -5.0F, -12.0F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(14.0F, 3.0F, 10.0F));
-		PartDefinition wheel1 = partdefinition.addOrReplaceChild("wheel1", CubeListBuilder.create().texOffs(58, 59).addBox(-7.0F, -5.0F, 2.0F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
-		PartDefinition wheel2 = wheel1.addOrReplaceChild("wheel2", CubeListBuilder.create().texOffs(0, 50).addBox(5.0F, -5.0F, 2.0F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition wheel1 = partdefinition.addOrReplaceChild("wheel1", CubeListBuilder.create().texOffs(58, 59).addBox(-7.0F, -2.0F, -2.0F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 21.0F, 4.0F));
+		PartDefinition wheel2 = wheel1.addOrReplaceChild("wheel2", CubeListBuilder.create().texOffs(0, 50).addBox(5.0F, -5.0F, 2.0F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 3.0F, -4.0F));
 		PartDefinition interior = partdefinition.addOrReplaceChild("interior",
 				CubeListBuilder.create().texOffs(22, 13).addBox(5.0F, -14.5F, -2.0F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(22, 7).addBox(-6.0F, -14.5F, -2.0F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 16)
 						.addBox(-5.0F, -11.5F, -2.0F, 10.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 7).addBox(-5.0F, -11.5F, 4.0F, 10.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)),
